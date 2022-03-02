@@ -16,80 +16,125 @@
       href="https://devchallenges.io/"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 
     <title>Devchallenges</title>
 
     <style>
-      body {
-        font-family: "Poppins", sans-serif;
+      * {
+        font-family: "Space Mono", sans-serif;
       }
 
-      ul {
-        padding-left: 24px;
+      img {
+        width: 100%;
+        height: auto;
       }
 
-      li {
-        margin-bottom: 8px;
+      header p {
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-left: 5%;
       }
 
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
+      .body {
+        margin: 12vh auto;
+        max-width: 70%;
+        display: flex;
       }
 
-      .welcome-text {
-        margin-top: 30vh;
+      .body-text {
         font-weight: 500;
       }
 
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
+      .body-text p {
         font-size: 1.5rem;
+        font-weight: 400;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
       }
 
-      .welcome-text a {
-        color: #f7542e;
+      .body-text h1 {
+        font-size: 4rem;
+        margin-bottom: 0;
+      }
+
+      a {
+        color: #60588E;
+      }
+
+      a:hover {
+        color:#FF6D5B;
+;
+      }
+
+      .body-text button {
+        background-color: #333333;
+        color: #FFFFFF;
+        width: 216px;
+        height: 68px;
+        border: none;
+      }
+
+      .body-text button:hover {
+        background-color: #636363;
+      }
+
+      footer {
+        text-align: center;
+      }
+
+      footer p {
+        color: #333333;
+      }
+
+      @media (max-width: 600px) {
+        .body {
+          flex-direction: column;
+        }
+        .body-text h1 {
+          font-size: 2rem;
+          margin-bottom: 0;
+        }
+        .body-text p {
+          font-size: 1rem;
+        }
+        .body-text button {
+          background-color: #333333;
+          color: #FFFFFF;
+          width: 75%;
+          height: 68px;
+        }
       }
     </style>
   </head>
+  <header>
+    <p>404 NOT FOUND</p>
+  </header>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
+    <div class="body">
+      <div>
+        <img src="./Scarecrow.png" alt="Scarecrow drawing with a 404 sign">
+      </div>
+      <div class="body-text">
         <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
+          I have bad news for you
         </h1>
 
         <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
+          The page you are looking for might be removed or is temporarily unavailable
         </p>
+        <button>
+          BACK TO HOMEPAGE
+        </button>
       </div>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
     </div>
   </body>
+  <footer>
+    <p>
+      Created by <a href="https://github.com/franchardin" target="blank">Francisco Chardin</a> for <a href="https://devchallenges.io/" target="blank">devChallenges.io</a>
+    </p>
+  </footer>
 </html>
